@@ -1,0 +1,23 @@
+.bottom-bar {
+    -fx-background-color: #1B5E20;
+    -fx-padding: 10px 0;
+    -fx-alignment: center;
+}
+
+.bottom-bar-label {
+    -fx-text-fill: #E8F5E9;
+    -fx-font-size: 14px;
+    -fx-font-weight: normal;
+}
+
+.bottom-bar-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-padding: 8px 15px;
+}
+
+.bottom-bar-button:hover {
+    -fx-background-color: #66BB6A;
+}

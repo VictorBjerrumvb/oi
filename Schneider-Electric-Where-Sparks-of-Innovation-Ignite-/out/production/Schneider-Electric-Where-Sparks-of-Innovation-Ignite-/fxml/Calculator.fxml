@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="gui.controller.CalculatorController">
+    <TextField fx:id="salaryInput" promptText="Enter Annual Salary"/>
+    <TextField fx:id="multiplierInput" promptText="Enter Overhead Multiplier"/>
+    <TextField fx:id="fixedAmountInput" promptText="Enter Fixed Annual Amount"/>
+    <TextField fx:id="workingHoursInput" promptText="Enter Effective Working Hours"/>
+    <TextField fx:id="utilizationInput" promptText="Enter Utilization Percentage"/>
+    <Button text="Calculate Hourly Rate" onAction="#handleCalculateHourlyRate"/>
+    <Label fx:id="outputLabel"/>
+</VBox>

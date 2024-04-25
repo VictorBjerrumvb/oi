@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import java.net.URL?>
+
+<BorderPane prefHeight="600.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.MainViewController" stylesheets="@../css/MainCss.css, @../css/BottomBar.css">
+    <stylesheets>
+        <URL value="@../css/MainCss.css" />
+    </stylesheets>
+    <top>
+        <MenuBar prefHeight="40.0" prefWidth="1080.0" id="mainMenu" styleClass="menu-bar">
+            <Menu text="Products" styleClass="menu-item" />
+            <Menu text="Services" styleClass="menu-item" />
+            <Menu text="Solutions" styleClass="menu-item" />
+            <Menu text="Support" styleClass="menu-item" />
+            <Menu text="Company" styleClass="menu-item" />
+            <Menu styleClass="menu-item">
+                <graphic>
+                    <MFXTextField promptText="Search..." styleClass="search-field" />
+                </graphic>
+            </Menu>
+        </MenuBar>
+    </top>
+    <center>
+        <VBox alignment="TOP_CENTER" spacing="10" styleClass="content-box">
+            <ImageView fitWidth="200" preserveRatio="true">
+                <Image url="@../images/LoginWindow.webp" />
+            </ImageView>
+            <Label text="Welcome to Our Service" styleClass="welcome-text" />
+        </VBox>
+    </center>
+    <bottom>
+        <HBox styleClass="bottom-bar" spacing="10" alignment="CENTER">
+            <Button text="More Info" styleClass="bottom-bar-button"/>
+            <Label text="Info about all sorts of things" styleClass="bottom-bar-label"/>
+        </HBox>
+    </bottom>
+</BorderPane>
